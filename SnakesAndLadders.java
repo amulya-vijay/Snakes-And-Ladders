@@ -6,6 +6,7 @@ public class SnakesAndLadders {
 		while(player1<100) {
 			int dice=(int) Math.floor(Math.random()*6+1);
 			int option=(int) Math.floor(Math.random()*2);
+			int temp=player1;
 			switch(option) {
 			case 0:
 				//Ladder-play
@@ -18,6 +19,9 @@ public class SnakesAndLadders {
 			default:
 				//no-play
 				break;
+			}
+			if(player1>100) {
+				player1=temp;
 			}
 		}
 		System.out.println(player1);
