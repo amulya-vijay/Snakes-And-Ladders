@@ -12,16 +12,16 @@ public class SnakesAndLadders {
 			case 0:
 				//Ladder-play
 				player1=player1+dice;
-				System.out.println(player1);
+				System.out.println("player1 position="+player1);
 				break;
 			case 1:
 				//Snake-play
 				player1=player1-dice;
-				System.out.println(player1);
+				System.out.println("player1 position="+player1);
 				break;
 			default:
 				//no-play
-				System.out.println(player1);
+				System.out.println("player1 position="+player1);
 				break;
 			}
 			if(player1<0) {
@@ -33,6 +33,6 @@ public class SnakesAndLadders {
 			rolls++;
 		}
 		System.out.println("Number of rolls required to win the game="+rolls);
-		System.out.println(player1);
+		System.out.println("final position="+player1);
 	}
 }
